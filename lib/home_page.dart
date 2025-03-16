@@ -1,3 +1,5 @@
+/// HomePage widget implements the login screen of the application.
+/// It contains a username input field and a login button.
 import 'package:basic_login_app/second_page.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  /// Controller for the username text field
+  /// This allows us to access and manage the text input
   final TextEditingController _usernameController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
